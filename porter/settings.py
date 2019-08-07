@@ -25,7 +25,7 @@ SECRET_KEY = 'y4r7r%^j(z2%-uw(7x6+q#l!fho54maj_sa8pp4e=4szxtq2_t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','54.163.19.128']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','18.205.40.232']
 
 
 # Application definition
@@ -80,7 +80,13 @@ DATABASES = {
     }
 }
 
-
+NEO4J_DATABASES = {
+    'default' : {
+        'HOST':'localhost',
+        'PORT':7474,
+        'ENDPOINT':'/db/data'
+    }
+}
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
