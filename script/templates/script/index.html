@@ -1,11 +1,5 @@
 <h1>Working on Script: {{script_id}}</h1>
-<form>
-  Script Name: {{script_name}}<br>
-  <input type="text" name="script_name"><br>
-  Code:<br>
-  <input type="text" name="script_code">
-</form>
-
-<form action="/script/{{script_id}}/save"  method='POST'>
-<button type='submit'>Save</button>
+<form action="/script/{{project_name}}/{{script_id}}" method="post">
+    {{ form }}
+    <input type="submit" value="Submit">
 </form>
