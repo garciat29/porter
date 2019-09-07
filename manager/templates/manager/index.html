@@ -1,0 +1,7 @@
+{{ project_list}}
+<ul>
+    {% for project in project_list.all %}
+        <li>{{ project.name }}</li>
+    {% endfor %}
+</ul>
+<p>No Projects Available. You should probably create one</p>
